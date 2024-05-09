@@ -19,27 +19,34 @@ public class RestaurantRepositoryImpl implements RestaurantRepository {
     }
 
     public void init() {
-        restaurants.put(7L, new Restaurant("Gaurav Hotel","NY"));
-        restaurants.put(8L, new Restaurant("Aakansha Hotel","SYDN"));
-        // Adding some sample restaurants
+        restaurants.put(1L, new Restaurant(1L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(2L, new Restaurant(2L,"5star Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(3L, new Restaurant(3L,"Butterfly High Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(4L, new Restaurant(4L,"Hitchki Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(5L, new Restaurant(5L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(6L, new Restaurant(6L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(7L, new Restaurant(7L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(8L, new Restaurant(8L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(9L, new Restaurant(9L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(10L, new Restaurant(10L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(11L, new Restaurant(11L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(12L, new Restaurant(12L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+        restaurants.put(13L, new Restaurant(13L,"Desire Hotel","SYDN",List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99))));
+// Adding some sample restaurants
 
-        restaurants.put(1L, new FastFoodRestaurant(1L, "Fast Food Restaurant 1", "Location A", CuisineType.FAST_FOOD_RESTAURANT,
-                List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99)),
-                List.of("Monday", "Tuesday"), List.of("Saturday", "Sunday")));
-//        restaurants.put(2L,addRestaurant(new FastFoodRestaurant(2L, "Fast Food Restaurant 2", "Location B", CuisineType.FAST_FOOD_RESTAURANT,
-//                List.of(new MenuItem("Pizza", 8.99), new MenuItem("Hot Dog", 4.99)),
-//                List.of("Monday", "Wednesday", "Friday"), List.of("Sunday")));
-        restaurants.put(3L,new FastFoodRestaurant(3L, "Fast Food Restaurant 3", "Location C", CuisineType.FAST_FOOD_RESTAURANT,
-                List.of(new MenuItem("Taco", 6.99), new MenuItem("Nachos", 3.99)),
-                List.of("Tuesday", "Thursday", "Saturday"), List.of("Monday", "Wednesday", "Friday")));
-
-        restaurants.put(4L,new FineDiningRestaurant(4L, "Fine Dining Restaurant 1", "Location D", CuisineType.FINE_DINING_RESTAURANT,
-                List.of(new MenuItem("Filet Mignon", 24.99), new MenuItem("Salmon", 21.99)),
-                List.of("Monday", "Wednesday", "Friday"), List.of("Sunday", "Tuesday")));
-        restaurants.put(5L,new FineDiningRestaurant(5L, "Fine Dining Restaurant 2", "Location E", CuisineType.FINE_DINING_RESTAURANT,
-                List.of(new MenuItem("Lobster Bisque", 18.99), new MenuItem("Caesar Salad", 14.99)),
-                List.of("Tuesday", "Thursday"), List.of("Monday", "Wednesday", "Friday", "Saturday")));
-        System.out.println("map size:"+restaurants.size());
+//        restaurants.put(1L, new FastFoodRestaurant(1L, "Fast Food Restaurant 1", "Location A", CuisineType.FAST_FOOD_RESTAURANT,
+//                List.of(new MenuItem("Burger", 5.99), new MenuItem("Fries", 2.99)),
+//                List.of("Monday", "Tuesday"), List.of("Saturday", "Sunday")));
+//        restaurants.put(3L,new FastFoodRestaurant(3L, "Fast Food Restaurant 3", "Location C", CuisineType.FAST_FOOD_RESTAURANT,
+//                List.of(new MenuItem("Taco", 6.99), new MenuItem("Nachos", 3.99)),
+//                List.of("Tuesday", "Thursday", "Saturday"), List.of("Monday", "Wednesday", "Friday")));
+//
+//        restaurants.put(4L,new FineDiningRestaurant(4L, "Fine Dining Restaurant 1", "Location D", CuisineType.FINE_DINING_RESTAURANT,
+//                List.of(new MenuItem("Filet Mignon", 24.99), new MenuItem("Salmon", 21.99)),
+//                List.of("Monday", "Wednesday", "Friday"), List.of("Sunday", "Tuesday")));
+//        restaurants.put(5L,new FineDiningRestaurant(5L, "Fine Dining Restaurant 2", "Location E", CuisineType.FINE_DINING_RESTAURANT,
+//                List.of(new MenuItem("Lobster Bisque", 18.99), new MenuItem("Caesar Salad", 14.99)),
+//                List.of("Tuesday", "Thursday"), List.of("Monday", "Wednesday", "Friday", "Saturday")));
     }
 
 

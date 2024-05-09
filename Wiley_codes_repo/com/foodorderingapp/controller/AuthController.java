@@ -21,7 +21,15 @@ public class AuthController {
             Customer customer = repo.db.get(userName);
             if(customer.getPassword().equals(password)){
                 UserController userController = new UserController();
-                userController.showAllHotels();
+                if(customer.getUserType().equals("C")){
+                    userController.showAllHotels();
+                }
+                else if(customer.getUserType().equals("A")){
+                    userController.showAllHotels();
+                }
+               else if(customer.getUserType().equals("O")){
+                    userController.showAllHotels();
+                }
             }
             else{
                 System.out.println("Wrong password");

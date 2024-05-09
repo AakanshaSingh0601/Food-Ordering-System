@@ -5,6 +5,7 @@ public class Customer {
     private String address;
     private String email;
 
+    private String userType;
     public String getPassword() {
         return password;
     }
@@ -13,16 +14,25 @@ public class Customer {
         this.password = password;
     }
 
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+
     private String password;
     // Additional attributes and methods as needed
 
     // Constructor, getters, and setters
 
-    public Customer(String name, String address, String email, String password) {
+    public Customer(String name, String address, String email, String password,String userType) {
         this.name = name;
         this.address = address;
         this.email = email;
         this.password = password;
+        this.userType= userType;
 
     }
 

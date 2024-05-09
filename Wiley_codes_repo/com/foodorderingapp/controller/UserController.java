@@ -38,4 +38,31 @@ public class UserController {
             menuIndex++;
         }
     }
+
+    public void showAdminPanel(){
+        System.out.println("1.Add Restaurant");
+        System.out.println("2.Remove Restaurant");
+        System.out.println("3.Show All Restaurant");
+
+        int choice= GlobalScanner.getInstance().nextInt();
+        if (choice == 1) {
+
+        }
+        else if (choice == 2) {
+
+        }
+        else if (choice == 3) {
+            List<Restaurant> restoList = restroRepo.getAllRestaurants();
+            System.out.println("List of restros are: ");
+            int index = 0;
+            for(Restaurant resto: restoList) {
+                System.out.println(index + ". " + resto.getName());
+                index++;
+            }
+//            System.out.println("Pick your restro");
+//            index = GlobalScanner.getInstance().nextInt();
+//            showRestoDetailPageByIndex(index);
+        }
+
+    }
 }

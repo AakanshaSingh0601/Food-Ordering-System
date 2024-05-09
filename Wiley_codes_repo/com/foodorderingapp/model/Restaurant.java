@@ -7,6 +7,7 @@ import java.util.List;
 public class Restaurant {
     private long restaurantID;
     private String name;
+
     private String Location;
     private CuisineType cuisineType;
    //private Map<String,MenuItem> menu;
@@ -16,8 +17,24 @@ public class Restaurant {
     private boolean isActive;
     private double rating;
 
+    public Restaurant(long restaurantID, String name, String location, List<MenuItem> menuItems) {
+        this.restaurantID = restaurantID;
+        this.name = name;
+        Location = location;
+        this.menuItems = menuItems;
+    }
 
-
+    public Restaurant(long restaurantID, String name, String location, CuisineType cuisineType, List<MenuItem> menuItems, LocalTime openingTime, LocalTime closingTime, boolean isActive, double rating) {
+        this.restaurantID = restaurantID;
+        this.name = name;
+        Location = location;
+        this.cuisineType = cuisineType;
+        this.menuItems = menuItems;
+        this.openingTime = openingTime;
+        this.closingTime = closingTime;
+        this.isActive = isActive;
+        this.rating = rating;
+    }
 
     public Restaurant(String name, String location) {
         this.restaurantID = restaurantID;
