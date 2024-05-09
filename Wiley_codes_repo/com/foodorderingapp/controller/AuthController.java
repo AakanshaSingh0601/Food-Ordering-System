@@ -25,7 +25,7 @@ public class AuthController {
                     userController.showAllHotels();
                 }
                 else if(customer.getUserType().equals("A")){
-                    userController.showAllHotels();
+                    userController.showAdminPanel();
                 }
                else if(customer.getUserType().equals("O")){
                     userController.showAllHotels();
